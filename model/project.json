@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Vocab Game",
+        "id": 1,
+        "description": "A simple game that requires students to rearrange the letters of a word into the correct order. \n\n It utilises local storage to allow students or teachers to add new words or remove existing words",
+        "repo": "https://github.com/louiskwt/DSE_Vocab",
+        "link": "https://vocab-game.netlify.app"
+    },
+    {
+        "title": "Score Chart",
+        "id": 2,
+        "description": "A score keeper app that allows me to facilitate a small game in class. The UI was built using CSS flex box. \n\n to make it dynamic and interactive, I added some event listeners as well as CSS animation to the front end",
+        "repo": "https://e-score-chart.netlify.app/",
+        "link": "https://github.com/louiskwt/e-Score-Chart"
+    },
+    {
+        "title": "NoteShelf",
+        "id": 3,
+        "description": "A website that can allow me to share notes with my students. The entire site was built using NodeJS for the backend to serve static PDF files while the front end was built using EJS to serve HTML templates and the PDF files",
+        "repo": "https://github.com/louiskwt/note-share",
+        "link": "https://noteshelf.herokuapp.com/"
+    }
+]

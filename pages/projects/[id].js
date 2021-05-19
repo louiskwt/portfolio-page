@@ -2,7 +2,13 @@ import React from 'react';
 
 export const getStaticPaths = async () => {
 	const res = await fetch(
-		'https://jsonplaceholder.typicode.com/users/1/albums'
+		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a',
+		{
+			headers: {
+				'secret-key': process.env.API_KEY,
+				'Content-Type': 'application/json'
+			}
+		}
 	);
 	const data = await res.json();
 
@@ -21,7 +27,13 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
 	const id = context.params.id;
 	const res = await fetch(
-		'https://jsonplaceholder.typicode.com/albums/' + id
+		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a/' + id,
+		{
+			headers: {
+				'secret-key': process.env.API_KEY,
+				'Content-Type': 'application/json'
+			}
+		}
 	);
 	const data = await res.json();
 	return {
