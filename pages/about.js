@@ -1,26 +1,30 @@
+import React from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
 
-export default function Home() {
+const About = () => {
 	return (
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
-				<title>My Page | Home</title>
+				<title>My Page | About</title>
 			</Head>
 			<div>
-				<h1 className={styles.title}>Homepage</h1>
-				<p className={styles.text}>
+				<h1>About</h1>
+				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					Accusantium consequuntur nobis dolor, ex beatae ad aperiam
 					animi ullam cumque hic quasi maiores, laboriosam placeat
 					facilis reiciendis esse, eligendi rem temporibus?
 				</p>
-				<Link href='/projects'>
-					<a className={styles.btn}>See my Projects</a>
-				</Link>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Accusantium consequuntur nobis dolor, ex beatae ad aperiam
+					animi ullam cumque hic quasi maiores, laboriosam placeat
+					facilis reiciendis esse, eligendi rem temporibus?
+				</p>
 			</div>
 		</>
 	);
-}
+};
+
+export default About;
