@@ -30,12 +30,18 @@ const Projects = ({ projects }) => {
 			<div>
 				<h1>Project List</h1>
 				{projects.map((project) => (
-					<Link href={project.link} key={project.id}>
-						<a className={styles.single}>
-							<h3>{project.title}</h3>
-							<p>{project.description}</p>
-						</a>
-					</Link>
+					<div className={styles.single} key={project.id}>
+						<h3>{project.title}</h3>
+						<p>{project.description}</p>
+						<div className={styles.group}>
+							<Link href={project.link}>
+								<a className={styles.btn}> View</a>
+							</Link>
+							<Link href={project.repo}>
+								<a className={styles.btn}>Repo</a>
+							</Link>
+						</div>
+					</div>
 				))}
 			</div>
 		</>

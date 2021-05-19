@@ -8,3 +8,19 @@
 .single:hover {
 	border-left: 8px solid #4979ff;
 }
+
+.group {
+	display: flex;
+	max-width: 300px;
+	justify-content: space-between;
+}
+
+.btn {
+	width: 100px;
+	padding: 8px 0;
+	margin: 20px auto;
+	background: #4979ff;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+}
