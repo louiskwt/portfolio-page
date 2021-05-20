@@ -14,7 +14,7 @@ const NotFound = () => {
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
-				<title>My Page | 404</title>
+				<title>404 - Something went wrong</title>
 			</Head>
 			<div className='not-found'>
 				<h1>Oooops....</h1>

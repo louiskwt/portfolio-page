@@ -25,7 +25,8 @@ const Projects = ({ projects }) => {
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
-				<title>My Page | Projects</title>
+				<link rel='icon' href='/favicon.png' />
+				<title>Louis Tsang | Projects</title>
 			</Head>
 			<div>
 				<h1>Project List</h1>

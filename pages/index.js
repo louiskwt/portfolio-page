@@ -7,16 +7,28 @@ export default function Home() {
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
-				<title>My Page | Home</title>
+				<link rel='icon' href='/favicon.png' />
+				<title>Louis Tsang | Home</title>
 			</Head>
 			<div>
-				<h1 className={styles.title}>Homepage</h1>
+				<h1 className={styles.title}>Louis Tsang</h1>
+				<h2>Who am I?</h2>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Accusantium consequuntur nobis dolor, ex beatae ad aperiam
-					animi ullam cumque hic quasi maiores, laboriosam placeat
-					facilis reiciendis esse, eligendi rem temporibus?
+					A full Stack web developer, specializing in JS, NodeJS and
+					React, but also have expereince coding in Python and C.
 				</p>
+				<h2>Current Status</h2>
+				<ul className={styles.text}>
+					<li>Freelancing</li>
+					<li>Looking for web development job</li>
+					<li>
+						Learning NextJS and other technologies related to JAM
+						stack
+					</li>
+					<li>
+						Building an English test preparation platform and app
+					</li>
+				</ul>
 				<Link href='/projects'>
 					<a className={styles.btn}>See my Projects</a>
 				</Link>
