@@ -12,7 +12,7 @@
 .group {
 	display: flex;
 	max-width: 300px;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .btn {
@@ -22,5 +22,15 @@
 	background: #4979ff;
 	border-radius: 4px;
 	color: white;
+	text-align: center;
+}
+
+.btnSecondary {
+	width: 80px;
+	padding: 8px 0;
+	margin: 20px auto;
+	background: #ff9849;
+	border-radius: 4px;
+	color: #000;
 	text-align: center;
 }

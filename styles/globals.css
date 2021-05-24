@@ -59,12 +59,21 @@ footer {
 	border-top: 1px solid #eaeaea;
 }
 
-footer .social {
-	display: flex;
+.social-links {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.social-links a {
+	justify-content: center;
+	width: 80px;
 }
 
 .not-found {
 	text-align: center;
+	justify-content: center;
 }
 .not-found a {
 	color: #4979ff;

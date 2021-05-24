@@ -36,10 +36,10 @@ const Projects = ({ projects }) => {
 						<p>{project.description}</p>
 						<div className={styles.group}>
 							<Link href={project.link}>
-								<a className={styles.btn}> View</a>
+								<a className={styles.btn}>View</a>
 							</Link>
 							<Link href={project.repo}>
-								<a className={styles.btn}>Repo</a>
+								<a className={styles.btnSecondary}>Repo</a>
 							</Link>
 						</div>
 					</div>
