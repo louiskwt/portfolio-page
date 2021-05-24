@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const getStaticProps = async () => {
 	const res = await fetch(
-		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a',
+		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a/3',
 		{
 			headers: {
 				'secret-key': process.env.API_KEY,

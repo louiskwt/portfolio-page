@@ -14,20 +14,18 @@ export default function Home() {
 				<h1 className={styles.title}>Louis Tsang</h1>
 				<h2>Who am I?</h2>
 				<p className={styles.text}>
-					A full Stack web developer, specializing in JS, NodeJS and
-					React, but also have expereince coding in Python and C.
+					A full stack web developer, specializing in JavaScript,
+					NodeJS and React, but also have expereince coding in Python
+					and C.
 				</p>
 				<h2>Current Status</h2>
 				<ul className={styles.text}>
-					<li>Freelancing</li>
-					<li>Looking for web development job</li>
+					<li>Freelancing but alsoLooking for web development job</li>
 					<li>
-						Learning NextJS and other technologies related to JAM
-						stack
+						Learning NextJS and other technologies related to the
+						React ecosystem
 					</li>
-					<li>
-						Building an English test preparation platform and app
-					</li>
+					<li>Building a vocabulary learning web application</li>
 				</ul>
 				<Link href='/projects'>
 					<a className={styles.btn}>See my Projects</a>

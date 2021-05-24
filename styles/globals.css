@@ -59,6 +59,10 @@ footer {
 	border-top: 1px solid #eaeaea;
 }
 
+footer .social {
+	display: flex;
+}
+
 .not-found {
 	text-align: center;
 }

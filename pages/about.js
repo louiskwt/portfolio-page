@@ -13,19 +13,21 @@ const About = () => {
 				<h1>My Story</h1>
 				<p>
 					Hi, there! I am a self-taught web developer who is fluent in
-					Javascript and Python. I grew up in Hong Kong and attended
+					JavaScript and Python. I grew up in Hong Kong and attended
 					university in the United States, majoring in English
 					Education. Upon my graduation, I’ve worked as an Engish
 					tutor in two different local education companies.
 				</p>
+				<hr />
 				<p>
 					While working as an English tutor, I learned that it is
 					possible to improve my teaching and solve some of my
-					students' problems through technologt, and that discovery
+					students' problems through technology, and that discovery
 					led me to start learning how to code. So, I learned how to
 					develop web applications by using online resources and
 					taking onlince courses.
 				</p>
+				<hr />
 				<p>
 					In May 2021, I made the decision to make a career change and
 					started freelancing as a web developer. As a self-taught
