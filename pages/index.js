@@ -7,7 +7,24 @@ export default function Home() {
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
+				<meta
+					name='description'
+					content='A personal page for Louis Tsang'
+				/>
+				<meta property='og:type' content='website' />
+				<meta
+					name='og:title'
+					property='og:title'
+					content='Louis Tsang | Home'
+				/>
+				<meta
+					name='og:description'
+					property='og:description'
+					content='A personal page for Louis Tsang'
+				/>
+				<meta property='og:site_name' content='Louis Tsang' />
 				<link rel='icon' href='/favicon.png' />
+				<link rel='canocial' href='https://louistsang.me' />
 				<title>Louis Tsang | Home</title>
 			</Head>
 			<div>

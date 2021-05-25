@@ -6,7 +6,21 @@ const About = () => {
 		<>
 			<Head>
 				<meta name='keywords' content='Louis Tsang' />
+				<meta name='description' content='The story about Louis' />
+				<meta property='og:type' content='website' />
+				<meta
+					name='og:title'
+					property='og:title'
+					content='Louis Tsang | About'
+				/>
+				<meta
+					name='og:description'
+					property='og:description'
+					content='The story about Louis'
+				/>
+				<meta property='og:site_name' content='Louis Tsang' />
 				<link rel='icon' href='/favicon.png' />
+				<link rel='canocial' href='https://louistsang.me/about' />
 				<title>Louis Tsang | About</title>
 			</Head>
 			<div>
