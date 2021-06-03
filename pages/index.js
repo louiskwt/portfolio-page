@@ -37,12 +37,9 @@ export default function Home() {
 				</p>
 				<h2>Current Status</h2>
 				<ul className={styles.text}>
-					<li>Freelancing but alsoLooking for web development job</li>
-					<li>
-						Learning NextJS and other technologies related to the
-						React ecosystem
-					</li>
-					<li>Building a vocabulary learning web application</li>
+					<li>Freelancing but also working on my own projects</li>
+					<li>Learning Python and everything related to React</li>
+					<li>Building my online business</li>
 				</ul>
 				<Link href='/projects'>
 					<a className={styles.btn}>See my Projects</a>

@@ -27,10 +27,11 @@ const About = () => {
 				<h1>My Story</h1>
 				<p>
 					Hi, there! I am a self-taught web developer who is fluent in
-					JavaScript and Python. I grew up in Hong Kong and attended
-					university in the United States, majoring in English
-					Education. Upon my graduation, I’ve worked as an Engish
-					tutor in two different local education companies.
+					JavaScript and has experience writing Python script. I grew
+					up in Hong Kong and attended university in the United
+					States, majoring in English Education. Upon my graduation,
+					I’ve worked as an Engish tutor in two different local
+					education companies.
 				</p>
 				<hr />
 				<p>
