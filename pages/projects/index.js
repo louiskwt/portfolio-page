@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const getStaticProps = async () => {
 	const res = await fetch(
-		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a/4',
+		'https://api.jsonbin.io/b/60a4d4dff350373e7857423a/5',
 		{
 			headers: {
 				'secret-key': process.env.API_KEY,
@@ -47,20 +47,22 @@ const Projects = ({ projects }) => {
 			</Head>
 			<div>
 				<h1>Project List</h1>
-				{projects.map((project) => (
-					<div className={styles.single} key={project.id}>
-						<h3>{project.title}</h3>
-						<p>{project.description}</p>
-						<div className={styles.group}>
-							<Link href={project.link}>
-								<a className={styles.btn}>View</a>
-							</Link>
-							<Link href={project.repo}>
-								<a className={styles.btnSecondary}>Repo</a>
-							</Link>
+				<div className={styles.projectGrid}>
+					{projects.map((project) => (
+						<div className={styles.single} key={project.id}>
+							<h3>{project.title}</h3>
+							<p>{project.description}</p>
+							<div className={styles.group}>
+								<Link href={project.link}>
+									<a className={styles.btn}>View</a>
+								</Link>
+								<Link href={project.repo}>
+									<a className={styles.btnSecondary}>Repo</a>
+								</Link>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
 		</>
 	);

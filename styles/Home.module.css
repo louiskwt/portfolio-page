@@ -4,6 +4,16 @@
 	padding-bottom: 20px;
 	text-align: center;
 }
+
+.profile {
+	display: flex;
+	justify-content: center;
+}
+
+.profileImg {
+	border-radius: 5%;
+}
+
 .text {
 	color: #777;
 	font-size: 1.5rem;

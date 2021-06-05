@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -25,20 +26,29 @@ export default function Home() {
 				<meta property='og:site_name' content='Louis Tsang' />
 				<link rel='icon' href='/favicon.png' />
 				<link rel='canocial' href='https://louistsang.me' />
-				<title>Louis Tsang | Home</title>
+				<title>Louis Tsang | Software Engineer</title>
 			</Head>
 			<div>
 				<h1 className={styles.title}>Louis Tsang</h1>
+				<div className={styles.profile}>
+					<Image
+						src='/profile.jpg'
+						alt='Picture of the author'
+						width={400}
+						height={316}
+						className={styles.profileImg}
+					/>
+				</div>
+
 				<h2>Who am I?</h2>
 				<p className={styles.text}>
-					A full stack web developer, specializing in JavaScript,
-					NodeJS and React, but also have expereince coding in Python
-					and C.
+					I am a web developer who strives to solve problems and build
+					cool stuff by using JavaScript, NodeJS, React, and Python.
 				</p>
 				<h2>Current Status</h2>
 				<ul className={styles.text}>
 					<li>Freelancing but also working on my own projects</li>
-					<li>Learning Python and everything related to React</li>
+					<li>Learning Python, NextJS, and React Native</li>
 					<li>Building my online business</li>
 				</ul>
 				<Link href='/projects'>
