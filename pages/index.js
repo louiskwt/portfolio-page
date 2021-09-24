@@ -49,7 +49,6 @@ export default function Home() {
 				<ul className={styles.text}>
 					<li>Freelancing but also working on my own projects</li>
 					<li>Learning Python, NextJS, and React Native</li>
-					<li>Building my online business</li>
 				</ul>
 				<Link href='/projects'>
 					<a className={styles.btn}>See my Projects</a>

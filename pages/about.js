@@ -44,8 +44,10 @@ const About = () => {
 				</p>
 				<hr />
 				<p>
-					In May 2021, I made the decision to make a career change and
-					started freelancing as a web developer. As a self-taught
+					In May 2021, I made the decision to make a career change, so
+					I quit my job and focused on learning web development and
+					building projects on my own. And now, I'm looking for
+					freelance or contract web development job. As a self-taught
 					programmer, I'm used to quickly picking up new languages and
 					technologies, and I'm eager to learn continuously. Despite
 					my lack of a formal degree in Computer Science, I have taken
