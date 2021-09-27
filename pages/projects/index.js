@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
 };
 
 const Projects = ({ projects }) => {
-	const projectList = projects.reverse();
+	const projectList = projects;
 	return (
 		<>
 			<Head>
@@ -49,20 +49,25 @@ const Projects = ({ projects }) => {
 			<div>
 				<h1>Project List</h1>
 				<div className={styles.projectGrid}>
-					{projectList.map((project) => (
-						<div className={styles.single} key={project.id}>
-							<h3>{project.title}</h3>
-							<p>{project.description}</p>
-							<div className={styles.group}>
-								<Link href={project.link}>
-									<a className={styles.btn}>View</a>
-								</Link>
-								<Link href={project.repo}>
-									<a className={styles.btnSecondary}>Repo</a>
-								</Link>
+					{projectList
+						.slice(0)
+						.reverse()
+						.map((project) => (
+							<div className={styles.single} key={project.id}>
+								<h3>{project.title}</h3>
+								<p>{project.description}</p>
+								<div className={styles.group}>
+									<Link href={project.link}>
+										<a className={styles.btn}>View</a>
+									</Link>
+									<Link href={project.repo}>
+										<a className={styles.btnSecondary}>
+											Repo
+										</a>
+									</Link>
+								</div>
 							</div>
-						</div>
-					))}
+						))}
 				</div>
 			</div>
 		</>
