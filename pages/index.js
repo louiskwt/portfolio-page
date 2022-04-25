@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import profilePic from '../public/profile.jpg'
 
 export default function Home() {
 	return (
@@ -32,7 +33,7 @@ export default function Home() {
 				<h1 className={styles.title}>Louis Tsang</h1>
 				<div className={styles.profile}>
 					<Image
-						src='/profile.jpg'
+						src={profilePic}
 						alt='Picture of the author'
 						width={400}
 						height={316}
