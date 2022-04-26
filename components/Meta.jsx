@@ -7,7 +7,7 @@ const Meta = ({ title, desc, canonical, img }) => {
 			<title>{title}</title>
 			<meta name='description' content={desc} />
 			<meta property='og:type' content='website' />
-			<meta property='og:title' property='og:title' content={title} />
+			<meta property='og:title' content={title} />
 			<meta
 				name='og:description'
 				property='og:description'

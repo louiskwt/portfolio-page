@@ -1,81 +1,298 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+/* ==== VARIABLES ==== */
+:root {
+	--header-height: 3rem;
+
+	/* ==== Colors ==== */
+	--hue-color: 220;
+
+	/* ==== HSL COLOR MODE ==== */
+	--primary-color: hsl(var(--hue-color), 69%, 60%);
+	--primary-color-alt: hsl(var(--hue-color), 57%, 43%);
+	--primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+	--title-color: hsl(var(--hue-color), 8%, 23%);
+	--text-color: hsl(var(--hue-color), 10%, 50%);
+	--text-color-light: hsl(var(--hue-color), 8%, 65%);
+	--body-color: hsl(var(--hue-color), 60%, 99%);
+	--container-color: #fff;
+	--scrollbar-color: hsl(var(--hue-color), 12%, 90%);
+	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+	/* ==== Font and Typography ==== */
+	--body-font: 'Poppins', sans-serif;
+
+	--big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .93rem;
+    --small-font-size: .81rem;
+    --smaller-font-size: .75rem;
+
+	/* ==== Font weight ==== */
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	/*==== Margenes Bottom ====*/
+	/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+	--mb-0-25: .25rem;
+	--mb-0-5: .5rem;
+	--mb-0-75: .75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*==== z index ====*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+}
+
+/* ==== Font size for large device ==== */
+@media screen and (min-width: 968px) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: .875rem;
+		--smaller-font-size: .813rem;
+	}
+}
+
+/* ==== DARK THEME ==== */
+
+/* ==== Button Dark / Light ==== */
+
+/* ==== BASE ==== */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
-	background: #f2f2f2;
-	color: #333;
-	font-family: 'Nunito';
+	margin: 0 0 var(--header-height) 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
 }
+
+h1, h2, h3, h4 {
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+}
+
+ul {
+	list-style: none;
+}
+
 a {
-	color: #333;
 	text-decoration: none;
+	color: var(--text-color);
 }
-.content {
-	max-width: 960px;
-	margin: 0 auto;
+
+img {
+	max-width: 100%;
+	height: auto;
 }
+
 nav {
-	margin: 10px auto 80px;
-	padding: 10px 0;
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	border-bottom: 1px solid #ddd;
-}
-nav a {
-	margin-left: 12px;
-	font-size: 1.2rem;
-	border-bottom: 0px;
-	transition: border-bottom 3s;
 }
 
-nav a::after {
-	content: '';
+/* ==== REUSABLE CSS CLASSES ==== */
+.section {
+	padding: 2rem 0 4rem;
+}
+
+.section__title {
+	font-size: var(--h1-font-size);
+	color: var(--title-color);
+}
+
+.section__subtitle {
 	display: block;
-	width: 0;
-	height: 2px;
-	background: #333;
-	transition: width 0.3s;
+	font-size: var(--small-font-size);
+	margin-bottom: var(--mb-3);
 }
 
-nav a:hover::after {
-	width: 100%;
-}
-
-nav .logo {
-	margin-right: auto;
-	margin-bottom: -40px;
-}
-
-p {
-	font-size: 1.2rem;
-}
-
-footer {
-	display: block;
+.secition__title,
+.section__subtitle {
 	text-align: center;
-	padding: 30px 0;
-	margin-top: 60px;
-	color: #777;
-	border-top: 1px solid #eaeaea;
 }
 
-.social-links {
+/* ==== Layout ==== */
+.container {
+	max-width: 760px;
+	margin-left: var(--mb-1-5);
+	margin-right: var(--mb-1-5);
+}
+
+.grid {
 	display: grid;
-	grid-auto-flow: column;
+	gap: 1.5rem;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+/* NAVBAR */
+
+.nav {
+	max-width: 968px;
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-items: center;
 }
 
-.social-links a {
-	justify-content: center;
-	width: 80px;
+.nav__logo,
+.nav__toggle {
+	color: var(--title-color);
+	font-weight: var(--font-medium);
 }
 
-.not-found {
-	text-align: center;
-	justify-content: center;
+.nav__logo:hover {
+	color: var(--primary-color);
 }
-.not-found a {
-	color: #4979ff;
-	text-decoration: underline;
+
+.nav__toggle {
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.nav__toggle:hover {
+	color: var(--primary-color);
+}
+
+.nav__menu {
+	bottom: -200%;
+	position: fixed;
+}
+
+@media screen and (max-width: 767px) {
+	.nav__menu {
+		position: fixed;
+		bottom: -100%;
+		left: 0;
+		width: 100%;
+		background-color: var(--body-color);
+		padding: 2rem 1.5rem 4rem;
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+		border-radius: 1.5rem 1.5rem 0 0;
+		transition: .3s;
+	}
+}
+
+.nav__list {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem
+}
+
+.nav__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: var(--normal-font-size);
+	color: var(--title-color);
+	font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+	color: var(--primary-color);
+}
+
+.nav__icon {
+	font-size: 1.6rem;
+}
+
+.nav__close {
+	position: absolute;
+	right: 1.3rem;
+	bottom: .5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.nav__close:hover {
+	color: var(--primary-color-alt);
+}
+
+/* ==== Show menu ====*/
+.show-menu {
+	bottom: 0;
+}
+
+
+/*==== Home Section ====*/
+.home__container {
+	gap: 3rem
+}
+
+.home__content {
+	grid-template-columns: .5fr 2.5fr;
+	padding-top: 3.5rem;
+	align-items: center;
+}
+
+.home__social {
+	display: grid;
+	grid-template-columns: max-content;
+	row-gap: 0.5rem;
+	/* margin-top: 2rem; */
+}
+
+.home__social-icon {
+	font-size: 4rem;
+	color: var(--primary-color);
+}
+
+.home__social-icon:hover {
+	color: var(--primary-color-alt);
+}
+
+.home__blob {
+	width: 350px;
+	fill: var(--primary-color)
+}
+
+.home__blob-img {
+	width: 190px;
+}
+
+.home__data {
+	grid-column: 2/3;
+}
+
+.home__title {
+	font-size: var(--big-font-size);
+}
+
+.home__subtitle {
+	font-size: var(--h3-font-size);
+	color: var(--text-color);
+	font-weight: var(--font-medium);
+	margin-bottom: var(--mb-0-75);
+}
+
+.home__description {
+	margin-bottom: var(--mb-2);
 }
