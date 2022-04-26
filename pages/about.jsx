@@ -1,7 +1,8 @@
 import React from 'react';
 import Meta from '../components/Meta';
 import Image from 'next/image';
-import profilePicture from '../public/profile.jpg'
+import profilePicture from '../public/images/profile.jpg'
+import { UilFileDownload, UilCodeBranch } from '@iconscout/react-unicons'
 
 const About = () => {
 	return (
@@ -28,16 +29,16 @@ const About = () => {
 									<span className="about__info-title">
 										1.5
 									</span>
-									<span className="__about__info-name">
+									<span className="about__info-name">
 										Years <br/>
 										experience
 									</span>
 								</div>
 								<div>
 									<span className="about__info-title">
-										05+
+										05
 									</span>
-									<span className="__about__info-name">
+									<span className="about__info-name">
 										Projects <br/>
 										Completed
 									</span>
@@ -46,11 +47,19 @@ const About = () => {
 									<span className="about__info-title">
 										1.5
 									</span>
-									<span className="__about__info-name">
+									<span className="about__info-name">
 										Years <br/>
 										experience
 									</span>
 								</div>
+							</div>
+							<div className="about__buttons">
+								<a download href="pdf/louis_cv.pdf" className="button button__flex">
+									Download my CV <UilFileDownload className="button__icon" />
+								</a>
+								<a download href="pdf/louis_cv.pdf" className="button button__flex">
+									View All My Work <UilCodeBranch className="button__icon" />
+								</a>
 							</div>
 						</div>
 					</div>

@@ -270,7 +270,7 @@ img {
 }
 
 .home__content {
-	grid-template-columns: .5fr 2.5fr;
+	grid-template-columns: .5fr 3.5fr;
 	padding-top: 3.5rem;
 	align-items: center;
 }
@@ -302,6 +302,7 @@ img {
 
 .home__data {
 	grid-column: 2/3;
+	margin-left: 3rem;
 }
 
 .home__title {
@@ -351,6 +352,7 @@ img {
 
 .about__info-name {
 	font-size: var(--small-font-size);
+	text-align: center;
 }
 
 .about__info-title,
@@ -361,5 +363,5 @@ img {
 
 .about__buttons {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }

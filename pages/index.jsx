@@ -1,6 +1,6 @@
 import Meta from '../components/Meta'
 import { UilLinkedinAlt, UilGithubAlt, UilTwitterAlt, UilSearchAlt } from '@iconscout/react-unicons'
-import profile from '../public/profile-pic.png'
+import profile from '../public/images/profile-pic.png'
 import Link from 'next/link'
 
 
@@ -54,7 +54,7 @@ export default function Home() {
 							</p>
 							<Link href="/about">
 								<a href="" className="button button__flex">
-									Find out more <UilSearchAlt />
+									Find out more <UilSearchAlt className="button__icon"/>
 								</a>
 							</Link>
 						</div>
