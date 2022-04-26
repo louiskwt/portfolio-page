@@ -1,6 +1,7 @@
 import Meta from '../components/Meta'
-import { UilLinkedinAlt, UilGithubAlt, UilTwitterAlt } from '@iconscout/react-unicons'
+import { UilLinkedinAlt, UilGithubAlt, UilTwitterAlt, UilSearchAlt } from '@iconscout/react-unicons'
 import profile from '../public/profile-pic.png'
+import Link from 'next/link'
 
 
 
@@ -51,6 +52,11 @@ export default function Home() {
 							<p className="home__description">
 								Experienced in developing modern web applications with JavaScript, React, Firebase, NodeJS, MongoDB
 							</p>
+							<Link href="/about">
+								<a href="" className="button button__flex">
+									Find out more <UilSearchAlt />
+								</a>
+							</Link>
 						</div>
 					</div>
 				</section>
