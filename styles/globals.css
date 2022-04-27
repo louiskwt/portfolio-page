@@ -266,6 +266,10 @@ img {
 	color: var(--primary-color);
 }
 
+.active-link {
+	color: var(--primary-color);
+}
+
 .nav__icon {
 	font-size: 1.6rem;
 }
