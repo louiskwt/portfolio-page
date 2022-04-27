@@ -13,9 +13,11 @@ const Navbar = () => {
 	return (
 		<header className='header' id="header">
 			<nav className="nav container">
-				<a href="#" className="nav__logo">
-					Louis T
-				</a>
+				<Link href='/'>
+					<a className="nav__logo">
+						Louis T
+					</a>
+				</Link>
 				<div className={"nav__menu " + (showMenu && "show-menu")} id="nav-menu">
 					<ul className="nav__list grid">
 						<li className="nav__item">
