@@ -51,7 +51,7 @@
 	--z-modal: 1000;
 }
 
-/* ==== Font size for large device ==== */
+/* ======== Font size for large device ======== */
 @media screen and (min-width: 968px) {
 	:root {
 		--big-font-size: 3rem;
@@ -68,7 +68,7 @@
 
 /* ==== Button Dark / Light ==== */
 
-/* ==== BASE ==== */
+/* ======== BASE ======== */
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -108,7 +108,7 @@ img {
 
 
 
-/* ==== REUSABLE CSS CLASSES ==== */
+/* ======== REUSABLE CSS CLASSES ======== */
 .section {
 	padding: 2rem 0 4rem;
 }
@@ -128,7 +128,7 @@ img {
 
 
 
-/* ==== Layout ==== */
+/* ======== Layout ======== */
 .container {
 	max-width: 760px;
 	margin-left: var(--mb-1-5);
@@ -150,7 +150,7 @@ img {
 	color: var(--text-color);
 }
 
-/* ==== BUTTONS ==== */
+/* ======== BUTTONS ======== */
 .button {
 	display: inline-block;
 	background-color: var(--primary-color);
@@ -159,6 +159,7 @@ img {
 	border-radius: .5rem;
 	font-weight: var(--font-medium);
 }
+
 
 .button:hover {
 	background-color: var(--primary-color-alt);
@@ -175,7 +176,19 @@ img {
 	align-items: center;
 }
 
-/* ==== NAVBAR ==== */
+.button__small {
+	cursor: pointer;
+	padding: .7rem 1rem;
+	border-radius: .5rem;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.button__small:hover {
+	background-color: var(--primary-color-alt);
+}
+
+/* ======== NAVBAR ======== */
 
 .nav {
 	max-width: 968px;
@@ -258,13 +271,13 @@ img {
 	color: var(--primary-color-alt);
 }
 
-/* ==== Show menu ====*/
+/* ======== Show menu ========*/
 .show-menu {
 	bottom: 0;
 }
 
 
-/*==== Home Section ====*/
+/*======== Home Section ========*/
 .home__container {
 	gap: 3rem
 }
@@ -279,7 +292,6 @@ img {
 	display: grid;
 	grid-template-columns: max-content;
 	row-gap: 0.5rem;
-	/* margin-top: 2rem; */
 }
 
 .home__social-icon {
@@ -320,7 +332,7 @@ img {
 	margin-bottom: var(--mb-2);
 }
 
-/* ==== ABOUT ==== */
+/* ======== ABOUT ======== */
 .about__img__section {
 	display: flex;
 	justify-content: center;
@@ -365,3 +377,51 @@ img {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+/* ======== Portfolio ======== */
+.projects__container {
+	gap: 1.5rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* ======== Card ======== */
+.card__content {
+	position: relative;
+	background-color: var(--container-color);
+	padding: 3.5rem .5rem 1.25rem 1.5rem;
+	border-radius: .25rem;
+	box-shadow: 0 2px 4px rgba(0,0,0,.25);
+	transition: .3s;
+}
+
+.card__content:hover {
+	box-shadow: 0 4px 8px rgba(0,0,0,.15);
+}
+
+
+
+.card__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-1);
+	font-weight: var(--font-medium);
+}
+
+.card__buttons {
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+.card__button {
+	cursor: pointer;
+	font-size: var(--small-font-size);
+	margin-right: var(--mb-0-75);
+}
+
+.card__icon {
+	margin-left: var(--mb-0-25);
+	transition: .3s;
+}
+
+
+

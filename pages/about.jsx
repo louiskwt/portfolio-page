@@ -2,7 +2,7 @@ import React from 'react';
 import Meta from '../components/Meta';
 import Image from 'next/image';
 import profilePicture from '../public/images/profile.jpg'
-import { UilFileDownload, UilCodeBranch } from '@iconscout/react-unicons'
+import { UilFileDownload } from '@iconscout/react-unicons'
 
 const About = () => {
 	return (
@@ -22,7 +22,7 @@ const About = () => {
 						{/* About data */}
 						<div className="about__data">
 							<p className="about__description">
-								A Web developer, with extensive knowledge in web technologies and a growth mindset, striving to deliver high quality code that can bring joy to the end users.
+								A self-taught developer, with extensive knowledge in web technologies and a growth mindset, striving to deliver high quality code that can bring joy to the end users.
 							</p>
 							<div className="about__info">
 								<div>
@@ -56,9 +56,6 @@ const About = () => {
 							<div className="about__buttons">
 								<a download href="pdf/louis_cv.pdf" className="button button__flex">
 									Download my CV <UilFileDownload className="button__icon" />
-								</a>
-								<a download href="pdf/louis_cv.pdf" className="button button__flex">
-									View All My Work <UilCodeBranch className="button__icon" />
 								</a>
 							</div>
 						</div>

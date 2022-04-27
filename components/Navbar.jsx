@@ -1,5 +1,5 @@
 import { UilEstate, UilUser, UilScenery, UilBriefcaseAlt, UilApps, UilTimes } from '@iconscout/react-unicons'
-import {useState} from 'react'
+import { useState } from 'react'
 import Link from 'next/link';
 
 
@@ -35,17 +35,19 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li className="nav__item">
-							<a href="" className="nav__link" onClick={toggleMenu}>
-								<UilScenery className="nav__icon" />
-								Portfolio
-							</a>
+							<Link href="/portfolio">
+								<a href="" className="nav__link" onClick={toggleMenu}>
+									<UilScenery className="nav__icon" />
+									Portfolio
+								</a>
+							</Link>
 						</li>
-						<li className="nav__item">
+						{/* <li className="nav__item">
 							<a href="" className="nav__link" onClick={toggleMenu}>
 								<UilBriefcaseAlt className="nav__icon" />
 								Services
 							</a>
-						</li>
+						</li> */}
 					</ul>
 					{/* Close Icon */}
 					<UilTimes className="nav__close" onClick={toggleMenu} />
