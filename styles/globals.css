@@ -133,7 +133,6 @@ img {
 }
 
 
-
 /* ======== Layout ======== */
 .container {
 	max-width: 760px;
@@ -205,6 +204,13 @@ img {
 	background-color: var(--primary-color-alt);
 }
 
+/* ===== 404 Button group ===== */
+.btn__group {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 /* ===== SCROLL BAR ===== */
 ::-webkit-scrollbar {
 	width: 0.70rem;
@@ -220,4 +226,5 @@ img {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: var(--text-color-light);
 }
+
 /* ==== END OF GENERAL STYLE ==== */
