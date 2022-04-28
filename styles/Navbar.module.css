@@ -27,10 +27,7 @@
     color: var(--primary-color);
 }
 
-.nav__menu {
-    bottom: -200%;
-    position: fixed;
-}
+
 
 @media screen and (max-width: 767px) {
     .nav__menu {
@@ -109,4 +106,35 @@
 
 .change__theme:hover {
     color: var(--primary-color);
+}
+
+
+/* ====== Media Queries ====== */
+
+/* ==== Small Device ==== */
+@media screen and (max-width: 375px) {
+    .nav__menu {
+        padding: 2rem .25rem 4rem;
+    }
+    
+    .nav__list {
+        column-gap: 0;
+    }
+}
+
+/* ==== Medium Device ==== */
+@media screen and (min-width: 768px) {
+   .nav__menu {
+       margin-left: auto;
+       margin-right: 2rem;
+   }
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
+        display: none;
+    }
+
+    .change__theme {
+        margin: 0;
+    }
 }

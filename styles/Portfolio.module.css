@@ -3,3 +3,29 @@
 	gap: 1.5rem;
 	grid-template-columns: repeat(2, 1fr);
 }
+
+/* ====== Media Queries ====== */
+
+/* ==== Small Device ==== */
+@media screen and (max-width: 375px) {
+	.projects__container {
+		grid-template-columns: max-content;
+		justify-content: center;
+	}
+
+}
+
+/* ==== Medium Device ==== */
+@media screen and (min-width: 768px) {
+	.projects__container {
+		grid-template-columns: repeat(3, 220px);
+	}
+}
+
+/* ===== Large Device ===== */
+@media screen and (min-width: 1024px) {
+	.projects__container {
+		grid-template-columns: repeat(3, 238px);
+	}
+
+}

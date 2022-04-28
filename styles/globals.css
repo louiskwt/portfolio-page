@@ -227,4 +227,52 @@ img {
 	background-color: var(--text-color-light);
 }
 
+/* ====== Media Queries ====== */
+
+/* ==== Small Device ==== */
+@media screen and (max-width: 375px) {
+	.container{
+		margin-left: var(--mb-1);
+		margin-right: var(--mb-1)
+	}
+}
+
+/* ==== Medium Device ==== */
+@media screen and (min-width: 768px) {
+	.container {
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	body {
+		margin: 0;
+	}
+
+	.section {
+		padding: 6rem 0 2rem;
+	}
+
+	.section__subtitle {
+		margin-bottom: 2rem;
+	}
+
+	.header {
+		top: 0;
+		bottom: initial
+	}
+
+	.header,
+	.main{
+		padding: 0 1rem;
+	}
+}
+
+/* ===== Large Device ===== */
+@media screen and (min-width: 1024px) {
+	.header,
+	.main{
+		padding: 0;
+	}
+}
+
 /* ==== END OF GENERAL STYLE ==== */

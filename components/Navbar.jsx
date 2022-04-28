@@ -55,7 +55,7 @@ const Navbar = () => {
 					</a>
 				</Link>
 				{/* Menu */}
-				<div className={`${styles.nav__menu} ` + (showMenu && `${styles.show__menu}`)} id="nav-menu">
+				<div className={`${styles.nav__menu} ` + (showMenu === true ? `${styles.show__menu}` : '')} id="nav-menu">
 					<ul className={`${styles.nav__list} grid`}>
 						{/* Nav item with active link */}
 						<li className="nav__item">
@@ -69,7 +69,7 @@ const Navbar = () => {
 						<li className="nav__item">
 							<Link href="/about">
 								<a href="" className={`${styles.nav__link} ` + (path === '/about' ? `${styles.active__link}` : '')} onClick={toggleMenu}>
-									<UilUser className="nav__icon" />
+									<UilUser className={styles.nav__icon} />
 									About
 								</a>
 							</Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
 				</div>
 				{/* Nav buttons */}
 				<div className={styles.nav__btns}>
-					<div className={styles.nav__toggle}>
+					<div>
 						{darkMode ? <UilSun className={styles.change__theme} onClick={changeMode} /> : <UilMoon className={styles.change__theme} onClick={changeMode} />}
 					</div>
 				

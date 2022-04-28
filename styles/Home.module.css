@@ -1,6 +1,6 @@
 /*======== Home Section ========*/
 .home__container {
-	gap: 3rem
+	gap: 1rem
 }
 
 .home__content {
@@ -12,11 +12,11 @@
 .home__social {
 	display: grid;
 	grid-template-columns: max-content;
-	row-gap: 0.5rem;
+	row-gap: 2rem;
 }
 
 .home__social__icon {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: var(--primary-color);
 }
 
@@ -34,8 +34,7 @@
 }
 
 .home__data {
-	grid-column: 2/3;
-	margin-left: 3rem;
+	grid-column: 2/4;
 }
 
 .home__title {
@@ -51,4 +50,62 @@
 
 .home__description {
 	margin-bottom: var(--mb-2);
+}
+
+/* ====== Media Queries ====== */
+
+/* ===== Smaller Device ===== */
+@media screen and (max-width: 767px) {
+	.home__content{
+		grid-template-columns: .25fr 3fr;
+	}
+}
+
+/* ==== Medium Device ==== */
+
+@media screen and (min-width: 768px) {
+	.home__container {
+		row-gap: 3rem;
+	}
+
+	.home__content {
+		grid-template-columns: max-content 1fr 1fr;
+		grid-gap: 1.5rem;
+		padding-top: 5rem;
+	}
+
+	.home__data {
+		grid-column: initial;
+	}
+
+	.home__social {
+		margin-right: 1rem;
+	}
+
+	.home__img {
+		order: 1;
+		justify-self: center;
+	}
+
+	.home__blob {
+		width: 400px;
+	}
+
+	.home__title {
+		font-size: 2.5rem;
+	}
+}
+
+
+
+/* ===== Large Device ===== */
+@media screen and (min-width: 1024px) {
+	.home__blob {
+		width: 420px;
+	}
+	
+	.home__social {
+		transform: translateX(-6rem);
+	}
+
 }

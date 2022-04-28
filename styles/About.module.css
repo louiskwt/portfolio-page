@@ -47,3 +47,20 @@
 .about__button:hover .button__icon {
     transform: translateX(.25rem);
 }
+
+/* ====== Media Queries ====== */
+
+/* ==== Medium Device ==== */
+@media screen and (min-width: 768px) {
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+}
