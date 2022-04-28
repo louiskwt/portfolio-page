@@ -10,7 +10,7 @@ const portfolio = () => {
     <>
         <Meta title={'My Wrok'} />
         {/* Main Frame */}
-        <main className="main">
+        <main className="main" id="top">
             {/* Section Begins */}
             <section className="portfolio section">
                 {/* Section heading */}

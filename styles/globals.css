@@ -418,8 +418,6 @@ img {
 	box-shadow: 0 4px 8px rgba(0,0,0,.15);
 }
 
-
-
 .card__title {
 	font-size: var(--h3-font-size);
 	margin-bottom: var(--mb-1);
@@ -458,3 +456,4 @@ img {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: var(--text-color-light);
 }
+
