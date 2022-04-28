@@ -1,0 +1,112 @@
+/* ======== NAVBAR ======== */
+
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+    color: var(--primary-color);
+}
+
+.nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover {
+    color: var(--primary-color);
+}
+
+.nav__menu {
+    bottom: -200%;
+    position: fixed;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+
+/* ==== NAV ITEM Group ==== */
+.nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem
+}
+
+/* ==== NAV ITEMS ==== */
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.active__link {
+    color: var(--primary-color);
+}
+
+.nav__icon {
+    font-size: 1.6rem;
+}
+
+/* ==== Nav close icon ====*/
+.nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.nav__close:hover {
+    color: var(--primary-color-alt);
+}
+
+/* ===== Toggle & DARK / LIGHT MODE Btn group ==== */
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+/* ======== Show NAV Menu ========*/
+.show__menu {
+    bottom: 0;
+}
+
+/* ===== DARK / LIGHT MODE Buttons ===== */
+.change__theme {
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change__theme:hover {
+    color: var(--primary-color);
+}
