@@ -59,7 +59,7 @@ const About = () => {
 								</a>
 								{/* Link to Portfolio */}
 								<Link href='/portfolio'>
-									<span className="button button__flex button__link about__button">
+									<span className="button__flex button__link about__button">
 										View My Work
 										<UilArrowRight className="button__icon" />
 									</span>

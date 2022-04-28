@@ -75,6 +75,7 @@ body.dark-theme {
 	--container-color: hsl(var(--hue-color), 29%, 16%);
 }
 
+
 /* ======== BASE ======== */
 * {
 	box-sizing: border-box;
@@ -210,6 +211,15 @@ img {
 	display: flex;
 	justify-content: center;
 }
+
+/* ===== DARK Mode Button Hover ===== */
+body.dark-theme .button:hover,
+body.dark-theme .button__small:hover
+{
+	color: var(--primary-color)
+}
+
+
 
 /* ===== SCROLL BAR ===== */
 ::-webkit-scrollbar {
