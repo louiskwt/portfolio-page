@@ -1,0 +1,49 @@
+/* ======== ABOUT ======== */
+.about__img__section {
+    display: flex;
+    justify-content: center;
+    display: 100%;
+}
+
+.about__img {
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about__info__name {
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.about__info__title,
+.about__info__name {
+    display: block;
+    text-align: center;
+}
+
+.about__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__button:hover .button__icon {
+    transform: translateX(.25rem);
+}

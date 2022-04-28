@@ -1,5 +1,6 @@
 import React from 'react'
 import { UilJavaScript, UilReact, UilHtml5, UilBoltAlt, UilGithub } from '@iconscout/react-unicons'
+import styles from '../styles/Card.module.css'
 
 const Card = ({link, repo, technologies, title}) => {
     // Generate icons for each projects based on technologies used
@@ -17,19 +18,19 @@ const Card = ({link, repo, technologies, title}) => {
     })
 
     return (
-        <div className="card__content">
+        <div className={styles.card__content}>
             <div>
                 {/* Icon for technolgies used for each project */}
                 {iconList}
-                <h3 className='card__title'>
+                <h3 className={styles.card__title}>
                     {title}
                 </h3>
-                <div className="card__buttons">
-                    <a href={link} target="_blank" className="button__small button__flex card__button">
-                        Demo <UilBoltAlt className="card__icon" />
+                <div className={styles.card__buttons}>
+                    <a href={link} target="_blank" className={"button__small button__flex " + `${styles.card__button}`}>
+                        Demo <UilBoltAlt className={styles.card__icon} />
                     </a>
-                    <a href={repo} target="_blank" className="button__small button__flex card__button">
-                        Repo <UilGithub className="card__icon" />
+                    <a href={repo} target="_blank" className={"button__small button__flex " + `${styles.card__button}`}>
+                        Repo <UilGithub className={styles.card__icon} />
                     </a>
                 </div>
             </div>
