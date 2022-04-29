@@ -5,15 +5,15 @@ import styles from '../styles/Card.module.css'
 const Card = ({link, repo, technologies, title}) => {
     // Generate icons for each projects based on technologies used
     let iconList = []
-    technologies.map((technology) => {
+    technologies.map((technology, index) => {
         if (technology.includes('html')) {
-            iconList.push(<UilHtml5 size={30} />)
+            iconList.push(<UilHtml5 size={30} key={index} />)
         }
         if (technology.includes('javascript')) {
-            iconList.push(<UilJavaScript size={30} />)
+            iconList.push(<UilJavaScript size={30} key={index} />)
         }
         if(technology.includes('react')) {
-            iconList.push(<UilReact size={30} />)
+            iconList.push(<UilReact size={30} key={index} />)
         }
     })
 

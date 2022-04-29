@@ -4,6 +4,25 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css'
 
+// Link Items
+const ITEMS = [
+	{
+		name: 'Home',
+		icon: <UilEstate className={`${styles.nav__icon}`} />,
+		link: '/'
+	}, 
+	{
+		name: 'About',
+		icon: <UilUser className={`${styles.nav__icon}`} />,
+		link: '/about'
+	}, 
+	{
+		name: 'Portfolio',
+		icon: <UilScenery className={`${styles.nav__icon}`} />,
+		link: '/portfolio'
+	}
+]
+
 
 
 const Navbar = () => {
@@ -54,35 +73,20 @@ const Navbar = () => {
 						Louis T
 					</a>
 				</Link>
-				{/* Menu */}
+				{/* Menu */}	
 				<div className={`${styles.nav__menu} ` + (showMenu === true ? `${styles.show__menu}` : '')} id="nav-menu">
 					<ul className={`${styles.nav__list} grid`}>
 						{/* Nav item with active link */}
-						<li className="nav__item">
-							<Link href="/" >
-								<a href="" className={`${styles.nav__link} ` + (path === '/' ? `${styles.active__link}` : '' )} onClick={toggleMenu}>
-									<UilEstate className={`${styles.nav__icon}`} />
-									Home
-								</a>
-							</Link>
-						</li>
-						<li className="nav__item">
-							<Link href="/about">
-								<a href="" className={`${styles.nav__link} ` + (path === '/about' ? `${styles.active__link}` : '')} onClick={toggleMenu}>
-									<UilUser className={styles.nav__icon} />
-									About
-								</a>
-							</Link>
-						</li>
-						<li className="nav__item">
-							<Link href="/portfolio">
-								<a href="" className={`${styles.nav__link} ` + (path === '/portfolio' ? `${styles.active__link}` : '')} onClick={toggleMenu}>
-									<UilScenery className={`${styles.nav__icon}`} />
-									Portfolio
-								</a>
-							</Link>
-						</li>
-		
+						{ITEMS.map((item, index) => (
+							<li className="nav__item" key={index}>
+								<Link href={item.link}>
+									<a className={`${styles.nav__link} ` + (path === item.link ? `${styles.active__link}` : '')} onClick={toggleMenu}>
+										{item.icon}
+										{item.name}
+									</a>
+								</Link>
+							</li>
+						))}
 					</ul>
 					{/* Close Icon */}
 					<UilTimes className={styles.nav__close} onClick={toggleMenu} />
