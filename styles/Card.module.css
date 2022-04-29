@@ -38,21 +38,21 @@
 /* ====== Media Queries ====== */
 
 /* ==== Small Device ==== */
-@media screen and (max-width: 767px) {
-    .card__content {
-        padding-right: 3rem;
-    }
-}
 
-/* ==== Medium Device ==== */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 524px) {
    .card__content {
-        padding: 6rem 1rem 3rem 1.8rem;
+       padding-right: 8rem;
    }
 
-    .card__buttons {
-        display: flex;
-        justify-content: space-around;
+}
+
+/* ==== Medium and Larger Device ==== */
+
+@media screen and (min-width: 525px) {
+    .card__content {
+        padding: 3rem 1rem 3rem 1.8rem;
     }
 }
+
+
 
