@@ -7,13 +7,13 @@ const Card = ({link, repo, technologies, title}) => {
     let iconList = []
     technologies.map((technology, index) => {
         if (technology.includes('html')) {
-            iconList.push(<UilHtml5 size={30} key={index} />)
+            iconList.push(<UilHtml5 className={styles.card__icon} size={30} key={index} />)
         }
         if (technology.includes('javascript')) {
-            iconList.push(<UilJavaScript size={30} key={index} />)
+            iconList.push(<UilJavaScript className={styles.card__icon} size={30} key={index} />)
         }
         if(technology.includes('react')) {
-            iconList.push(<UilReact size={30} key={index} />)
+            iconList.push(<UilReact className={styles.card__icon} size={30} key={index} />)
         }
     })
 
@@ -26,10 +26,10 @@ const Card = ({link, repo, technologies, title}) => {
                     {title}
                 </h3>
                 <div className={styles.card__buttons}>
-                    <a href={link} target="_blank" className={"button__small button__flex " + `${styles.card__button}`}>
+                    <a href={link} target="_blank" className={"button__flex button__link " + `${styles.card__button}`}>
                         Demo <UilBoltAlt className={styles.card__icon} />
                     </a>
-                    <a href={repo} target="_blank" className={"button__small button__flex " + `${styles.card__button}`}>
+                    <a href={repo} target="_blank" className={"button__flex button__link " + `${styles.card__button}`}>
                         Repo <UilGithub className={styles.card__icon} />
                     </a>
                 </div>
