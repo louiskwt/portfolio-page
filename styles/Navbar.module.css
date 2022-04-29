@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+/* ===== NAV LOGO & Animation ===== */
+
+.nav__logo {
+    font-size: var(--h2-font-size);
+}
+
 .nav__logo,
 .nav__toggle {
     color: var(--title-color);
@@ -17,6 +23,17 @@
 .nav__logo:hover {
     color: var(--primary-color);
 }
+
+.nav__cursor {
+    margin-left: var(--mb-0-1);
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ==== NAV TOGGLE ===== */
 
 .nav__toggle {
     font-size: 1.1rem;

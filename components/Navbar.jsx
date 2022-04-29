@@ -69,11 +69,11 @@ const Navbar = () => {
 		<header className='header'>
 			<nav className={`${styles.nav} container`}>
 				<Link href='/'>
-					<a className="nav__logo">
-						Louis T
+					<a className={styles.nav__logo}>
+						 Louis<span className={styles.nav__cursor}>|</span>
 					</a>
 				</Link>
-				{/* Menu */}	
+				{/* Menu */}	 
 				<div className={`${styles.nav__menu} ` + (showMenu === true ? `${styles.show__menu}` : '')} id="nav-menu">
 					<ul className={`${styles.nav__list} grid`}>
 						{/* Nav item with active link */}
