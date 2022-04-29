@@ -94,6 +94,8 @@ body {
 	font-size: var(--normal-font-size);
 	background-color: var(--body-color);
 	color: var(--text-color);
+	/* Prevent Safari browsers from resizing */
+	-webkit-text-size-adjust: none;
 }
 
 h1, h2, h3, h4 {
