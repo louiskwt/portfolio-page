@@ -60,7 +60,7 @@ const About = () => {
 							{/* Buttons */}
 							<div className={styles.about__buttons}>
 								{/* CV Download */}
-								<a download href="pdf/louis_cv.pdf" className="button button__flex">
+								<a download href="pdf/louis_cv.pdf" target='_blank' className="button button__flex">
 									Download my CV <UilFileDownload className="button__icon" />
 								</a>
 								{/* Link to Portfolio */}
