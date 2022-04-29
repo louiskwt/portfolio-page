@@ -6,10 +6,16 @@ import { UilFileDownload, UilArrowRight } from '@iconscout/react-unicons'
 import Link from 'next/link';
 import styles from '../styles/About.module.css'
 
+const META = {
+	"title": "Louis Tsang - About",
+	"desc": "A Software Engineer based in Hong Kong specialised in developing web applications and web services. Always strive to deliver code that can bring joy to end users and make a impact.",
+	"canonical": 'https://www.louistsang.me/about'
+}
+
 const About = () => {
 	return (
 		<>
-			<Meta title={'About Louis'} />
+			<Meta title={META.title} desc={META.desc} canonical={META.canonical} />
 			{/* Main Container */}
 			<main className="main">
 				{/* About Section */}

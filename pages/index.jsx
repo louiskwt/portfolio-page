@@ -4,10 +4,17 @@ import profile from '../public/images/profile-pic.png'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+const META = {
+	"title": "Louis Tsang - Software Engineer",
+	"desc": "A Software Engineer based in Hong Kong specialised in developing web applications and web services. Always strive to deliver code that can bring joy to end users and make a impact.",
+	"canonical": 'https://www.louistsang.me/'
+}
+
 export default function Home() {
+
 	return (
 		<>
-			<Meta title={'Louis Tsang | Software Engineer'} />
+			<Meta title={META.title} desc={META.desc} canonical={META.canonical} />
 			<main className='main'>
 				{/* Home Seciton */}
 				<section className="section" id="home">

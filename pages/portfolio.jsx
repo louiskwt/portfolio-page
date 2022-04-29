@@ -4,12 +4,17 @@ import projects from '../public/projects/projects';
 import Card from '../components/Card';
 import styles from '../styles/Portfolio.module.css'
 
+const META = {
+  "title": "Louis Tsang - Portfolio",
+  "desc": "A Software Engineer based in Hong Kong specialised in developing web applications and web services. Always strive to deliver code that can bring joy to end users and make a impact.",
+  "canonical": 'https://www.louistsang.me/portfolio'
+}
 
 const portfolio = () => {
-    console.log(projects)
+    
   return (
     <>
-        <Meta title={'My Wrok'} />
+        <Meta title={META.title} desc={META.desc} canonical={META.canonical} />
         {/* Main Frame */}
         <main className="main" id="top">
             {/* Section Begins */}
