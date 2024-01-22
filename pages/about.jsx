@@ -1,9 +1,9 @@
+import {UilArrowRight, UilFileDownload} from "@iconscout/react-unicons";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Meta from "../components/Meta";
-import Image from "next/image";
 import profilePicture from "../public/images/profile.jpg";
-import { UilFileDownload, UilArrowRight } from "@iconscout/react-unicons";
-import Link from "next/link";
 import styles from "../styles/About.module.css";
 
 const META = {
@@ -26,20 +26,13 @@ const About = () => {
           <div className={`${styles.about__container}` + " container grid"}>
             {/* About img */}
             <div className={styles.about__img__section}>
-              <Image
-                src={profilePicture}
-                width={300}
-                height={250}
-                className={styles.about__img}
-              />
+              <Image src={profilePicture} width={300} height={250} className={styles.about__img} />
             </div>
             {/* About data */}
             <div className={styles.about__data}>
               {/* Self-description */}
               <p className={styles.about__description}>
-                A self-taught developer, with extensive knowledge in web
-                technologies and a growth mindset, striving to deliver high
-                quality code that can bring joy to the end users.
+                A self-taught developer, with extensive knowledge in web technologies and a growth mindset, striving to deliver high quality code that can bring joy to the end users.
                 <br />
                 <br />
                 This page is created by Square One Software Company
@@ -64,12 +57,7 @@ const About = () => {
               {/* Buttons */}
               <div className={styles.about__buttons}>
                 {/* CV Download */}
-                <a
-                  download
-                  href="pdf/louis_cv.pdf"
-                  target="_blank"
-                  className="button button__flex"
-                >
+                <a download href="pdf/Tsang_Ka_Wing_CV.pdf" target="_blank" className="button button__flex">
                   Download my CV <UilFileDownload className="button__icon" />
                 </a>
                 {/* Link to Portfolio */}
