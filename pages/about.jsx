@@ -40,7 +40,7 @@ const About = () => {
               {/* About info */}
               <div className={styles.about__info}>
                 <div>
-                  <span className={styles.about__info__title}>1.5</span>
+                  <span className={styles.about__info__title}>2.5</span>
                   <span className={styles.about__info__name}>
                     Years <br />
                     experience
