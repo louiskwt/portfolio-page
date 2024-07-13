@@ -32,7 +32,7 @@ const About = () => {
             <div className={styles.about__data}>
               {/* Self-description */}
               <p className={styles.about__description}>
-                A self-taught developer, with extensive knowledge in web technologies and a growth mindset, striving to deliver high quality code that can bring joy to the end users.
+                A software engineer who strives to make an impact with code
                 <br />
                 <br />
                 This page is created by Square One Software Company
