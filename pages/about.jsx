@@ -1,9 +1,7 @@
 import {UilArrowRight, UilFileDownload} from "@iconscout/react-unicons";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Meta from "../components/Meta";
-import profilePicture from "../public/images/profile.jpg";
 import styles from "../styles/About.module.css";
 
 const META = {
@@ -24,10 +22,6 @@ const About = () => {
           <h2 className="section__title">About Me</h2>
           <span className="section__subtitle">My Background</span>
           <div className={`${styles.about__container}` + " container grid"}>
-            {/* About img */}
-            <div className={styles.about__img__section}>
-              <Image src={profilePicture} width={300} height={250} className={styles.about__img} />
-            </div>
             {/* About data */}
             <div className={styles.about__data}>
               {/* Self-description */}
