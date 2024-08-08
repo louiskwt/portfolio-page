@@ -29,7 +29,10 @@ const About = () => {
                 A software engineer who strives to make an impact with code
                 <br />
                 <br />
-                This page is created by Square One Software Company
+                Currently, I'm working at an e-commerce startup by day
+                <br />
+                <br />
+                I've been running Square One Software, an indie software lab, by night
               </p>
               {/* About info */}
               <div className={styles.about__info}>
@@ -37,14 +40,7 @@ const About = () => {
                   <span className={styles.about__info__title}>2.5</span>
                   <span className={styles.about__info__name}>
                     Years <br />
-                    experience
-                  </span>
-                </div>
-                <div>
-                  <span className={styles.about__info__title}>05</span>
-                  <span className={styles.about__info__name}>
-                    Projects <br />
-                    Completed
+                    experience in tech
                   </span>
                 </div>
               </div>
