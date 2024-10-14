@@ -1,15 +1,7 @@
-import React from 'react';
-import Navbar from './Navbar';
-import ScrollTab from './ScrollTab';
+import React from "react";
 
-const Layout = ({ children }) => {
-	return (
-		<>
-			<Navbar />
-			{children}
-			<ScrollTab />
-		</>
-	);
+const Layout = ({children}) => {
+  return <>{children}</>;
 };
 
 export default Layout;
