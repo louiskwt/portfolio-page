@@ -18,9 +18,9 @@ export default function Home() {
         <p>Because of that I'm now committed to dive deeper into CS and ML/AI so that I can move forward.</p>
         {/* link */}
         <p id="links">
-          👋 Follow me on 𝕏: <a href="https://x.com/kawingt2">@EurekaLabsAI</a>
+          👋 Follow me on 𝕏: <a href="https://x.com/kawingt2">@tkw</a>
           <br />
-          💻 And/or GitHub: <a href="https://github.com/louiskwt">EurekaLabsAI</a>
+          💻 And/or GitHub: <a href="https://github.com/louiskwt">louiskwt</a>
           <br />
         </p>
       </main>
