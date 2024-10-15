@@ -1,12 +1,10 @@
-import {UilGithubAlt, UilLinkedinAlt, UilSearchAlt, UilTwitterAlt} from "@iconscout/react-unicons";
-import Link from "next/link";
+import {UilFileDownload, UilGithubAlt, UilLinkedinAlt, UilTwitterAlt} from "@iconscout/react-unicons";
 import Meta from "../components/Meta";
-import profile from "../public/images/profile-pic.png";
 import styles from "../styles/Home.module.css";
 
 const META = {
-  title: "Louis Tsang - Software Engineer",
-  desc: "A Professional Software Engineer based in Hong Kong specialised in developing web applications and web services. Always strive to deliver code that can bring joy to end users and make a impact.",
+  title: "Louis Tsang aka kwingz",
+  desc: "Louis's home on the internet.",
   canonical: "https://www.louistsang.me/",
 };
 
@@ -17,50 +15,43 @@ export default function Home() {
       <main className="main">
         {/* Home Seciton */}
         <section className="section" id="home">
-          <div className={`${styles.home__container}` + " container grid"}>
-            <div className={`${styles.home__content}` + " container grid"}>
-              {/* Social Links */}
-              <div className={styles.home__social}>
-                <a href="https://www.linkedin.com/in/ka-wing-tsang-689344153/" target="_blank" className={styles.home__social__icon}>
-                  <UilLinkedinAlt size="40" />
-                </a>
-                <a href="https://github.com/louiskwt" target="_blank" className={styles.home__social__icon}>
-                  <UilGithubAlt size="40" />
-                </a>
-                <a href="https://x.com/kawingt2" target="_blank" className={styles.home__social__icon}>
-                  <UilTwitterAlt size="40" />
-                </a>
-              </div>
-              {/* Blob Img */}
-              <div className={styles.home__img}>
-                <svg className={styles.home__blob} viewBox="0 0 200 187">
-                  <mask id="mask0" mask-type="alpha">
-                    <path d="M52.4,-71.8C66.6,-61.7,76.1,-44.8,82.2,-26.6C88.2,-8.4,90.7,10.9,85.5,28C80.3,45.1,67.2,59.8,51.7,69.9C36.1,80,18.1,85.4,0,85.4C-18.1,85.5,-36.3,80.2,-51.3,69.9C-66.3,59.7,-78.2,44.5,-83.1,27.4C-88,10.4,-86,-8.4,-80.3,-26.2C-74.7,-44,-65.5,-60.7,-51.5,-70.9C-37.5,-81.2,-18.7,-84.9,0.1,-85.1C19,-85.3,38.1,-82,52.4,-71.8Z" transform="translate(100 100)" />
-                  </mask>
-                  <g mask="url(#mask0)">
-                    <path d="M52.4,-71.8C66.6,-61.7,76.1,-44.8,82.2,-26.6C88.2,-8.4,90.7,10.9,85.5,28C80.3,45.1,67.2,59.8,51.7,69.9C36.1,80,18.1,85.4,0,85.4C-18.1,85.5,-36.3,80.2,-51.3,69.9C-66.3,59.7,-78.2,44.5,-83.1,27.4C-88,10.4,-86,-8.4,-80.3,-26.2C-74.7,-44,-65.5,-60.7,-51.5,-70.9C-37.5,-81.2,-18.7,-84.9,0.1,-85.1C19,-85.3,38.1,-82,52.4,-71.8Z" transform="translate(100 100)" />
-                    <image xlinkHref={profile.src} className={styles.home__blob__img} />
-                  </g>
-                </svg>
-              </div>
-              <div className={styles.home__data}>
-                <h1 className={styles.home__title}>Hi, this's Louis</h1>
-                <h3>Developer from HK</h3>
-                <p className={styles.home__description}>
-                  Experienced in developing modern web applications with JavaScript, React, Firebase, NodeJS, MongoDB, and more.
-                  <br />
-                  <br />
-                  Founder of Square One Software Company
-                </p>
-                <Link href="/about">
-                  <a href="" className="button button__flex">
-                    Find out more <UilSearchAlt className="button__icon" />
-                  </a>
-                </Link>
-              </div>
+          <div className={`${styles.home__content}` + " container flex"}>
+            {/* Social Links */}
+            <div className={styles.home__social}>
+              <a href="https://www.linkedin.com/in/ka-wing-tsang-689344153/" target="_blank" className={styles.home__social__icon}>
+                <UilLinkedinAlt size="40" />
+              </a>
+              <a href="https://github.com/louiskwt" target="_blank" className={styles.home__social__icon}>
+                <UilGithubAlt size="40" />
+              </a>
+              <a href="https://x.com/kawingt2" target="_blank" className={styles.home__social__icon}>
+                <UilTwitterAlt size="40" />
+              </a>
+            </div>
+            <div className={styles.home__data}>
+              <h1 className={styles.home__title}>Hi, this's Louis</h1>
+              <h3>A developer based in Hong Knog</h3>
+              <p className={styles.home__description}>
+                I'm passionate about learning computer science, teaching, and building things with technology. My current goal is to level up my skills and knowledge so that I can work on building large scale systems to tackle meaningful problems in real life.
+                <br />
+                <br />
+                Right now, I'm fully committed to dive deeper into computer science and catch up with the current trend of AI and ML. If you want to connect feel free to find me on social media or check my github as well. I'm also open to work on a project if I'm a good fit and the problems that you or your team is trying to solve interest me.
+              </p>
+              <hr />
+              <h1 className={styles.home__title}>Bio</h1>
+
+              <div className={styles.home__description}>Before I became a developer, I worked as an English teacher for more than 3 years. During the Covid-19 pandemic, I decided to step out of my comfort zone and learned something new by teaching myself how to program through online resoucres</div>
+              <div className={styles.home__description}>Surprisingly, learning how to program somehow drove me towards building porojects for my students to use in my class, and the joy of seeing how my projects were used and enjoyed by my students got me hooked.</div>
+              <div className={styles.home__description}>That's why in 2022, I made an unexpected pivot: getting a job as a full-stack developer at a startup called Retykle. And after working at Retykle for 2+ years, I decdied to take a study break and allowed myself to dive deeper into the study of computer science.</div>
+              <div className={styles.home__description}>Meanwhile, I'm also working as a freelancer and building my own projects.</div>
+              {/* CV Download */}
+              <a download href="pdf/Tsang_Ka_Wing_CV.pdf" target="_blank" className="button button__flex">
+                Download my CV <UilFileDownload className="button__icon" />
+              </a>
             </div>
           </div>
         </section>
+        {/* About */}
       </main>
     </>
   );
