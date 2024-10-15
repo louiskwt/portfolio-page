@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: max-content;
   row-gap: 2rem;
+  max-height: 2rem;
 }
 
 .home__social__icon {
@@ -31,7 +32,7 @@
 }
 
 .home__data {
-  grid-column: 4/4;
+  font-size: 1.23rem;
 }
 
 .home__title {

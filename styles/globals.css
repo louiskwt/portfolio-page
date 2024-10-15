@@ -22,11 +22,11 @@
   /* ==== Font and Typography ==== */
   --body-font: "Poppins", sans-serif;
 
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: 0.93rem;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1.5rem;
   --small-font-size: 0.81rem;
   --smaller-font-size: 0.75rem;
 
