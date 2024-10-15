@@ -23,7 +23,6 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   // Handle Show menu
   const toggleMenu = () => {
-    // console.log('fired')
     setShowMenu(!showMenu);
   };
 
