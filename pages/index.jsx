@@ -30,12 +30,12 @@ export default function Home() {
             </div>
             <div className={styles.home__data}>
               <h1 className={styles.home__title}>Hi, this's Louis</h1>
-              <h3>Developer from HK</h3>
+              <h3>A developer based in Hong Knog</h3>
               <p className={styles.home__description}>
-                Experienced in developing modern web applications with JavaScript, React, Firebase, NodeJS, MongoDB, and more.
+                I'm passionate about learning computer science, teaching, and building things with technology. My current goal is to level up my skills and knowledge so that I can work on building large scale systems to tackle meaningful problems in real life.
                 <br />
                 <br />
-                Founder of Square One Software Company
+                Right now, I'm fully committed to dive deeper into computer science and catch up with the current trend of AI and ML. If you want to connect feel free to find me on social media or check my github as well. I'm also open to work on a project if I'm a good fit and the problems that you or your team is trying to solve interest me.
               </p>
             </div>
           </div>
