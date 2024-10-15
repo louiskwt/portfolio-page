@@ -154,6 +154,11 @@ img {
   justify-content: space-between;
 }
 
+.around-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .header {
   width: 100%;
   position: fixed;

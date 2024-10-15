@@ -1,4 +1,4 @@
-import {UilApps, UilEstate, UilMoon, UilScenery, UilSun, UilTimes, UilUser} from "@iconscout/react-unicons";
+import {UilApps, UilEstate, UilMoon, UilScenery, UilSun, UilTimes} from "@iconscout/react-unicons";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
@@ -12,12 +12,7 @@ const ITEMS = [
     link: "/",
   },
   {
-    name: "About",
-    icon: <UilUser className={`${styles.nav__icon}`} />,
-    link: "/about",
-  },
-  {
-    name: "Portfolio",
+    name: "Works",
     icon: <UilScenery className={`${styles.nav__icon}`} />,
     link: "/portfolio",
   },
@@ -73,7 +68,7 @@ const Navbar = () => {
         </Link>
         {/* Menu */}
         <div className={`${styles.nav__menu} ` + (showMenu === true ? `${styles.show__menu}` : "")} id="nav-menu">
-          <ul className={`${styles.nav__list} grid`}>
+          <ul className={`${styles.nav__list} around-flex`}>
             {/* Nav item with active link */}
             {ITEMS.map((item, index) => (
               <li className="nav__item" key={index}>
@@ -95,7 +90,7 @@ const Navbar = () => {
 
           {/* Toggle Menu */}
           <div className={styles.nav__toggle}>
-            <UilApps onClick={toggleMenu} />
+            <UilApps size={32} onClick={toggleMenu} />
           </div>
         </div>
       </nav>
