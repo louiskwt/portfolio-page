@@ -1,4 +1,4 @@
-import {UilGithubAlt, UilLinkedinAlt, UilTwitterAlt} from "@iconscout/react-unicons";
+import {UilFileDownload, UilGithubAlt, UilLinkedinAlt, UilTwitterAlt} from "@iconscout/react-unicons";
 import Meta from "../components/Meta";
 import styles from "../styles/Home.module.css";
 
@@ -44,6 +44,10 @@ export default function Home() {
               <div className={styles.home__description}>Surprisingly, learning how to program somehow drove me towards building porojects for my students to use in my class, and the joy of seeing how my projects were used and enjoyed by my students got me hooked.</div>
               <div className={styles.home__description}>That's why in 2022, I made an unexpected pivot: getting a job as a full-stack developer at a startup called Retykle. And after working at Retykle for 2+ years, I decdied to take a study break and allowed myself to dive deeper into the study of computer science.</div>
               <div className={styles.home__description}>Meanwhile, I'm also working as a freelancer and building my own projects.</div>
+              {/* CV Download */}
+              <a download href="pdf/Tsang_Ka_Wing_CV.pdf" target="_blank" className="button button__flex">
+                Download my CV <UilFileDownload className="button__icon" />
+              </a>
             </div>
           </div>
         </section>
