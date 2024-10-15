@@ -3,8 +3,8 @@ import Meta from "../components/Meta";
 import styles from "../styles/Home.module.css";
 
 const META = {
-  title: "Louis Tsang - Software Engineer",
-  desc: "A Professional Software Engineer based in Hong Kong specialised in developing web applications and web services. Always strive to deliver code that can bring joy to end users and make a impact.",
+  title: "Louis Tsang aka kwingz",
+  desc: "Louis's home on the internet.",
   canonical: "https://www.louistsang.me/",
 };
 
