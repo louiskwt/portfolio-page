@@ -24,9 +24,13 @@ const portfolio = () => {
           {/* Projects container */}
           <div className={`${styles.projects__container}` + " container grid"}>
             {/* project content */}
-            {projects.map((project, index) => (
-              <Card key={index} link={project.link} repo={project.repo} technologies={project.technologies} title={project.title} />
-            ))}
+            {projects
+              .sort((a, b) => {
+                return b.id - a.id;
+              })
+              .map((project, index) => (
+                <Card key={index} link={project.link} repo={project.repo} technologies={project.technologies} title={project.title} />
+              ))}
           </div>
         </section>
       </main>
