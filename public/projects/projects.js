@@ -31,6 +31,14 @@ const projects = [
     descriptions: "A survey app for a psychological research carried out at CUHK",
     technologies: ["react", "javascript"],
   },
+  {
+    id: 5,
+    title: "Terminal Count Down",
+    repo: "https://github.com/louiskwt/tcd",
+    link: "https://www.youtube.com/watch?v=RRJWFTlhmCo",
+    descriptions: "A terminal countdown timer built using C",
+    technologies: ["C"],
+  },
   // {
   //     "id": 5,
   //     "title": "DSE Wordle",
