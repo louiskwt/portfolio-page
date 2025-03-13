@@ -39,14 +39,14 @@ const projects = [
     descriptions: "A terminal countdown timer built using C",
     technologies: ["C"],
   },
-  // {
-  //     "id": 5,
-  //     "title": "DSE Wordle",
-  //     "repo": "https://github.com/louiskwt/hkdsewordle",
-  //     "link": "https://www.hkdsewordle.com/",
-  //     "descriptions": "Wordle Game developed for DSE students",
-  //     "technologies": ["react", "javascript"]
-  // },
+  {
+    id: 6,
+    title: "Lexigram",
+    repo: "https://github.com/louiskwt/lexilogic-web",
+    link: "https://lexigramapp.com/",
+    descriptions: "A web application created for students to learn English vocabulary through mini games",
+    technologies: ["react", "javascript"],
+  },
 ];
 
 export default projects;
