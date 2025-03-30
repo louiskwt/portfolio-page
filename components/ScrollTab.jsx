@@ -24,7 +24,7 @@ const ScrollTab = () => {
         <a href='#top' className={`${styles.scrollup} ${(scrollPosition > 100 && styles.show__scroll)}`}>
             <UilArrowUp className={styles.scrollup__icon}  />
         </a>
-  )
+    );
 }
 
 export default ScrollTab

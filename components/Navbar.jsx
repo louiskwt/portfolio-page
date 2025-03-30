@@ -60,10 +60,9 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className={`${styles.nav} container`}>
-        <Link href="/">
-          <a className={styles.nav__logo}>
-            Louis<span className={styles.nav__cursor}>|</span>
-          </a>
+        <Link href="/" className={styles.nav__logo}>
+          Louis<span className={styles.nav__cursor}>|</span>
+
         </Link>
         {/* Menu */}
         <div className={`${styles.nav__menu} ` + (showMenu === true ? `${styles.show__menu}` : "")} id="nav-menu">
@@ -71,11 +70,14 @@ const Navbar = () => {
             {/* Nav item with active link */}
             {ITEMS.map((item, index) => (
               <li className="nav__item" key={index}>
-                <Link href={item.link}>
-                  <a className={`${styles.nav__link} ` + (path === item.link ? `${styles.active__link}` : "")} onClick={toggleMenu}>
-                    {item.icon}
-                    {item.name}
-                  </a>
+                <Link
+                  href={item.link}
+                  className={`${styles.nav__link} ` + (path === item.link ? `${styles.active__link}` : "")}
+                  onClick={toggleMenu}>
+
+                  {item.icon}
+                  {item.name}
+
                 </Link>
               </li>
             ))}

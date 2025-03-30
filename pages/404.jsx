@@ -26,27 +26,26 @@ const NotFound = () => {
 
 
 	return (
-		<>
-			<Meta title={'404 | Something went wrong'} />
-			<main className='main'>
+        <>
+            <Meta title={'404 | Something went wrong'} />
+            <main className='main'>
 				<section className="section">
 					<h2 className='section__title'>Oooops...Sorry! Something went wrong</h2>
 					<sapn className='section__subtitle'>
 						Click the button to go back or wait to be redirected in {countDown - 1} seconds
 					</sapn>
 					<div className='btn__group'>
-						<Link href='/'>
-							<a className="button button__flex">
-								Go back  <UilSignin className="button__icon" />
-							</a>
-						</Link>
+						<Link href='/' className="button button__flex">
+                            Go back  <UilSignin className="button__icon" />
+
+                        </Link>
 					</div>
 
 
 				</section>
 			</main>
-		</>
-	);
+        </>
+    );
 };
 
 export default NotFound;
