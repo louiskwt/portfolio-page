@@ -47,6 +47,14 @@ const projects = [
     descriptions: "A web application created for students to learn English vocabulary through mini games",
     technologies: ["react", "javascript"],
   },
+  {
+    id: 7,
+    title: "DSE StarChaser",
+    repo: "https://github.com/louiskwt/starchaser-portal",
+    link: "https://dsestarchaser.me/",
+    descriptions: "An open source site for students studying for the HKDSE English exams",
+    technologies: ["python", "html"],
+  },
 ];
 
 export default projects;
